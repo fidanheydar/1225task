@@ -39,8 +39,6 @@
 //{
 //    Console.WriteLine("Eded arrayde yoxdur!");
 //}
-
-
 #endregion
 
 #region Task3
@@ -73,8 +71,19 @@
 #endregion
 
 #region Task4
-
-
+Console.Write("Yazi daxil edin:");
+string text = Console.ReadLine();
+string newText = "";
+int startIndex = 0;
+while (startIndex < text.Length && text[startIndex] == ' ')
+{
+    startIndex++;
+}
+for (int i = startIndex; i < text.Length; i++)
+{
+    newText += text[i];
+}
+Console.Write("Netice:" + newText);
 
 #endregion
 
@@ -118,29 +127,11 @@
 //            break;
 //    }
 //} while (!check);
-
-
-
-
-
 #endregion
 
 
 
-Console.Write("Yazi daxil edin:");
-string text = Console.ReadLine();
-string newText = "";
-int startIndex = 0;
-while (startIndex < text.Length && text[startIndex] == ' ')
-{
-    startIndex++;
-}
-for (int i = startIndex; i < text.Length; i++)
-{
-    newText += text[i];
-}
 
-Console.Write("Netice:" + newText);
 
 
 
